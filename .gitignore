@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Streamlit temporary files
+.streamlit/
+
+# VS Code files
+.vscode/
+
+# Mac OS files
+.DS_Store
+
+# FAISS index folder (optional, if you don't want to push it)
+faiss_index/
