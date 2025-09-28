@@ -34,7 +34,7 @@ def get_text_chunks(text):
 
 # ---------------------- VECTOR STORE ----------------------
 def get_vector_store(text_chunks):
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")  # ✅ free local embeddings
+    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")  
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
     vector_store.save_local("faiss_index")
 
